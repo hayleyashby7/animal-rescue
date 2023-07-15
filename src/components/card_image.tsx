@@ -8,14 +8,17 @@ const CardImage: React.FC<CardImageProps> = ({ img: { image, altText, licenceUrl
 	return (
 		<>
 			<img className='card__image' src={image} alt={altText}></img>
-			<p className='card__text__small'>
-				Image licenced under <a href={licenceUrl}>{licenceType}</a>
-				{attributionName && (
-					<>
-						&nbsp;by <a href={attributionUrl}>{attributionName}</a>
-					</>
-				)}
-			</p>
+
+			{licenceType && (
+				<p className='card__text__small'>
+					Image licenced under <a href={licenceUrl}>{licenceType}</a>
+					{attributionName && (
+						<>
+							&nbsp;by <a href={attributionUrl}>{attributionName}</a>
+						</>
+					)}
+				</p>
+			)}
 		</>
 	);
 };
