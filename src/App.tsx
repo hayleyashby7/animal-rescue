@@ -10,6 +10,8 @@ import catData from './data/cat-data';
 import dogData from './data/dog-data';
 import Card from './components/card';
 import images from './data/cat-images';
+import catFace from './assets/catFace.png';
+import dogFace from './assets/dogFace.png';
 
 function App(): JSX.Element {
 	const [cats, setCats] = useState<Array<Cat>>([
@@ -35,16 +37,16 @@ function App(): JSX.Element {
 	return (
 		<>
 			<Navbar />
-			<Header numCats={cats.length} />
+			<Header numCats={cats.length} numDogs={dogs.length} />
 
 			<main>
 				<div className='cards__wrapper'>
 					{cats.map((cat) => (
-						<Card key={cat.id} animal={cat} image={matchImage(cat.imageId)} />
+						<Card key={cat.id} animal={cat} image={matchImage(cat.imageId)} iconSrc={catFace} iconAlt='cat face icon' />
 					))}
 
 					{dogs.map((dog) => (
-						<Card key={dog.id} animal={dog} image={matchImage(dog.imageId)} />
+						<Card key={dog.id} animal={dog} image={matchImage(dog.imageId)} iconSrc={dogFace} iconAlt='dog face icon' />
 					))}
 				</div>
 			</main>

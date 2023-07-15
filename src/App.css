@@ -141,3 +141,8 @@ body {
 		padding-left: 1.5rem;
 	}
 }
+
+.card__icon {
+	filter: invert(12%) sepia(61%) saturate(3276%) hue-rotate(196deg) brightness(93%) contrast(90%);
+	width: 1.5rem;
+}
