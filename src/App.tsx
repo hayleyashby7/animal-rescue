@@ -12,6 +12,7 @@ import Card from './components/card';
 import images from './data/cat-images';
 import catFace from './assets/catFace.png';
 import dogFace from './assets/dogFace.png';
+import AddAnimalForm from './components/add_animal_form';
 
 function App(): JSX.Element {
 	const [cats, setCats] = useState<Array<Cat>>([
@@ -34,11 +35,25 @@ function App(): JSX.Element {
 		return images[id];
 	};
 
+	const addAnimal = (data: { name: any; animal: any; species: any; favFoods: any; birthYear: any }) => {
+		const { name, animal, species, favFoods, birthYear } = data;
+		const newAnimal = { id: uuidv4(), name: name, species: species, favFoods: [favFoods], birthYear: birthYear };
+		console.log(newAnimal);
+		if (animal === 'cat') {
+			setCats([...cats, newAnimal]);
+			return;
+		}
+		if (animal === 'dog') {
+			setDogs([...dogs, newAnimal]);
+			return;
+		}
+	};
+
 	return (
 		<>
 			<Navbar />
 			<Header numCats={cats.length} numDogs={dogs.length} />
-
+			<AddAnimalForm onSubmit={(data) => addAnimal(data)} />
 			<main>
 				<div className='cards__wrapper'>
 					{cats.map((cat) => (
