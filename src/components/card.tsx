@@ -8,7 +8,7 @@ interface CardProps {
 	iconAlt: string;
 }
 
-const CatCard: React.FC<CardProps> = ({ animal: { name, species, favFoods, birthYear }, image, iconSrc, iconAlt }) => {
+const Card: React.FC<CardProps> = ({ animal: { name, species, favFoods, birthYear }, image, iconSrc, iconAlt }) => {
 	const foods = favFoods.join(', ');
 
 	return (
@@ -25,4 +25,4 @@ const CatCard: React.FC<CardProps> = ({ animal: { name, species, favFoods, birth
 	);
 };
 
-export default CatCard;
+export default Card;
