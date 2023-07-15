@@ -1,14 +1,6 @@
-# React Props and State
+# Animal Rescue!
 
-Welcome to the wonderful world of React!
-
-We'll be investigating components, props and state. Let's get started 🙌
-
-![React Atom](./public/catom-dog.png)
-
-## How to Get Started
-
-Fork this repo to your Github and then clone the forked version of this repo
+Animal rescue SPA to practice React Props and States with Typescript. Based off https://github.com/techreturners/lm-code-react-props-state-cat-cards
 
 To install the dependencies run:
 
@@ -18,9 +10,6 @@ or if use yarn:
 
 ### `yarn install`
 
-(They both do the same thing)
-
-Make sure you're in the right directory!
 
 To start the app:
 
@@ -30,18 +19,3 @@ or if you use yarn:
 
 ### `yarn start`
 
-Runs the app in the development mode.
-
-The app should open in your browser.
-
-If the page doesn't open automatically, you can open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits 👍
-
-You will also see any lint errors in the console ✅
-
-You'll see there's a (very) basic React app already created for you. Have an explore of the files and get a sense of what it's doing. We're going to be adding features to make it more interactive.
-
-Meow, lets get started!
-
-Head over to [Activity 1](./activities/activity_1.md) to begin!
