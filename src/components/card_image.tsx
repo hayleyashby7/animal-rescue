@@ -1,10 +1,10 @@
 import Image from '../data/image';
 
-interface CatImageProps {
+interface CardImageProps {
 	img: Image;
 }
 
-const CatImage: React.FC<CatImageProps> = ({ img: {image, altText, licenceUrl, licenceType, attributionName, attributionUrl} }) => {
+const CardImage: React.FC<CardImageProps> = ({ img: { image, altText, licenceUrl, licenceType, attributionName, attributionUrl } }) => {
 	return (
 		<>
 			<img className='card__image' src={image} alt={altText}></img>
@@ -20,4 +20,4 @@ const CatImage: React.FC<CatImageProps> = ({ img: {image, altText, licenceUrl, l
 	);
 };
 
-export default CatImage;
+export default CardImage;

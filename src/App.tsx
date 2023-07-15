@@ -6,7 +6,7 @@ import Footer from './components/footer';
 import { useState } from 'react';
 import Cat from './data/cat';
 import catData from './data/cat-data';
-import CatCard from './components/cat_card';
+import Card from './components/card';
 import images from './data/cat-images';
 
 function App(): JSX.Element {
@@ -36,7 +36,7 @@ function App(): JSX.Element {
 			<main>
 				<div className='cards__wrapper'>
 					{cats.map((cat) => (
-						<CatCard key={cat.id} cat={cat} image={matchImage(cat.imageId)} />
+						<Card key={cat.id} animal={cat} image={matchImage(cat.imageId)} />
 					))}
 				</div>
 			</main>
