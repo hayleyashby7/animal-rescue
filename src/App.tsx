@@ -38,7 +38,7 @@ function App(): JSX.Element {
 	const addAnimal = (data: { name: any; animal: any; species: any; favFoods: any; birthYear: any }) => {
 		const { name, animal, species, favFoods, birthYear } = data;
 		const newAnimal = { id: uuidv4(), name: name, species: species, favFoods: [favFoods], birthYear: birthYear };
-		console.log(newAnimal);
+
 		if (animal === 'cat') {
 			setCats([...cats, newAnimal]);
 			return;
