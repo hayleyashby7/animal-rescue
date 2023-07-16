@@ -53,8 +53,8 @@ function App(): JSX.Element {
 		<>
 			<Navbar />
 			<Header numCats={cats.length} numDogs={dogs.length} />
-			<AddAnimalForm onSubmit={(data) => addAnimal(data)} />
 			<main>
+				<AddAnimalForm onSubmit={(data) => addAnimal(data)} />
 				<div className='cards__wrapper'>
 					{cats.map((cat) => (
 						<Card key={cat.id} animal={cat} image={matchImage(cat.imageId)} iconSrc={catFace} iconAlt='cat face icon' />
