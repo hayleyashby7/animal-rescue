@@ -146,3 +146,33 @@ body {
 	filter: invert(12%) sepia(61%) saturate(3276%) hue-rotate(196deg) brightness(93%) contrast(90%);
 	width: 1.5rem;
 }
+
+.btn {
+	background-color: var(--yellow);
+	box-shadow: 0 0.188rem 0.438rem 0 rgb(13, 59, 102, 0.2);
+	color: var(--navy);
+	padding: 0.5em 1em;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.5rem;
+	border-radius: 0.313rem;
+	margin: 0.5em;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: var(--red);
+	color: var(--light);
+}
+
+.form__wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.form--closed {
+	display: none;
+}
