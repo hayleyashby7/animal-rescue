@@ -40,11 +40,11 @@ function App(): JSX.Element {
 		const newAnimal = { id: uuidv4(), name: name, species: species, favFoods: [favFoods], birthYear: birthYear };
 
 		if (animal === 'cat') {
-			setCats([...cats, newAnimal]);
+			setCats([newAnimal, ...cats]);
 			return;
 		}
 		if (animal === 'dog') {
-			setDogs([...dogs, newAnimal]);
+			setDogs([newAnimal, ...dogs]);
 			return;
 		}
 	};
