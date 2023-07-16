@@ -176,3 +176,7 @@ body {
 .form--closed {
 	display: none;
 }
+
+input:invalid {
+	border: 0.188rem solid var(--red);
+}
