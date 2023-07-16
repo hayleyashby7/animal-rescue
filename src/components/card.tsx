@@ -1,5 +1,5 @@
 import Image from '../data/image';
-import CardImage from './card_image';
+import CardImage from './card-image';
 
 interface CardProps {
 	animal: { name: string; species: string; favFoods: string[]; birthYear: number };

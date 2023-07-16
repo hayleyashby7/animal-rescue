@@ -10,9 +10,9 @@ import catData from './data/cat-data';
 import dogData from './data/dog-data';
 import Card from './components/card';
 import images from './data/cat-images';
-import catFace from './assets/catFace.png';
-import dogFace from './assets/dogFace.png';
-import AddAnimalForm from './components/add_animal_form';
+import catFace from './assets/cat-face.png';
+import dogFace from './assets/dog-face.png';
+import AddAnimalForm from './components/add-animal-form';
 
 function App(): JSX.Element {
 	const [cats, setCats] = useState<Array<Cat>>([
